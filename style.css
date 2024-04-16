@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    padding: 10px 100px;
+    background-image: linear-gradient(to right bottom, #051937, #3d425c, #707184, #a4a4ae, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container4 .logo img{
+    width: 100px;
+}
+
+.container4 .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.container4 .nav-list a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ccc;
+    transition: 0.3sec;
+}    
+
+.container4 .nav-list a:hover,
+.container4 .nav-list a.selected{
+    color: rgb(0, 132, 255);
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    
+}
+
+.main .self-intro{
+    width: 500px;
+}
+
+.main .self-intro h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.main .self-intro h5{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    word-spacing: 3px;
+    background-color: rgba(30, 30, 163, 0.972);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.button:hover{
+    background-color:  rgb(0, 132, 255);
+}
+.main img {
+    width: 400px;
+    border-radius: 20rem;
+}
+
+h4.seperator{
+    font-size: 3rem;
+    color: #ccc;
+}
+
+.line{
+    height: 1px;
+    background-color: #3d425c;
+}
+
+.brighten{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brighten img{
+    width: 800px ;
+    padding: 2.5rem;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    margin-bottom: 4rem;
+}
+
+.brighten img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+.seperstor2{
+    margin-bottom: 3rem;
+}
+.seperstor2 h4{
+    font-size: 3rem;
+    color: #ccc;
+    
+
+}
+.Experience{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 4rem;
+    
+
+}
+
+.Experience .left{
+    width: 800px;
+}
+
+.Experience .left p{
+    font-weight: 400;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.Experience .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.Experience .right i{
+    font-size: 3rem;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1500px) {
+    body{
+        padding: 10px 60px;
+    }
+
+    .brighten{
+        justify-content: space-between;
+    }
+
+    .brighten img{
+        width: 600px;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    h4.seperator{
+        font-size: 40px;
+    }
+
+    .Experience{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Experience .left{
+        width: 100%;
+        align-items: center;
+    }
+
+    .Experience .left p{
+        font-size: 14px;
+    }
+
+    .Experience .right{
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    body{
+        padding: 6px 30px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }  
+    
+    .main .self-intro{
+        width: 100%;
+    }
+
+    .brighten img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Experience{
+        padding: 30px 30px;
+    }
+
+    .Experience .right i{
+        font-size: 30px;
+    }
+
+    .Experience .right p{
+        font-size: 12px;
+    }
+
+    .container4 .nav-list{
+        gap: 20px;
+    }
+
+    .container4 .nav-list a{
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .main img{
+        width: 300px;
+    }
+
+    .main .self-intro h5{
+        font-size: 15px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
